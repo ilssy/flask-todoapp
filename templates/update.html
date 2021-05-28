@@ -6,7 +6,20 @@
   <h1>Update Task</h1>
 
   <form action="/update/{{task.id}}" method="POST">
-    <input type="text" name="content" id="content" value="{{task.content}}" />
+    <input
+      type="text"
+      name="content"
+      id="content"
+      placeholder="Content"
+      value="{{task.content}}"
+    />
+    <input
+      type="text"
+      name="category"
+      id="category"
+      placeholder="Category"
+      value="{{task.category}}"
+    />
     <input type="submit" value="Update Task" />
   </form>
 </div>
